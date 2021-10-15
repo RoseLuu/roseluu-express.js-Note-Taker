@@ -16,7 +16,8 @@ api.get('/notes/:id', (req, res) => {
     readFromFile('./db/db.json')
         .then((data) => JSON.parse(data))
         .then((json) => {
-            const result = json.filter((note) => note.id !== id)
+            //print out result of id user searching for
+            const result = json.filter((note) => note.id == id)
             return result.length > 0
                 ? res.json(result)
                 : res.json('No note with that ID')
