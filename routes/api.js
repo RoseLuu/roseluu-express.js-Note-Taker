@@ -10,18 +10,19 @@ api.get('/notes', (req, res) => {
         .then((data) => res.json(JSON.parse(data)))
 })
 //GET route for specific notes
-api.get('/notes/:id', (req, res) => {
-    console.log("Each GET request")
-    const id = req.params.id;
-    readFromFile('./db/db.json')
-        .then((data) => JSON.parse(data))
-        .then((json) => {
-            const result = json.filter((note) => note.id !== id)
-            return result.length > 0
-                ? res.json(result)
-                : res.json('No note with that ID')
-        })
-})
+//this was make on index.js file line 53-67 so GET for specific notes is not needed
+// api.get('/notes/:id', (req, res) => {
+//     console.log("Each GET request")
+//     const id = req.params.id;
+//     readFromFile('./db/db.json')
+//         .then((data) => JSON.parse(data))
+//         .then((json) => {
+//             const result = json.filter((note) => note.id !== id)
+//             return result.length > 0
+//                 ? res.json(result)
+//                 : res.json('No note with that ID')
+//         })
+// })
 //DELETE route
 api.delete('/notes/:id', (req, res) => {
     console.log("DELETE request")
