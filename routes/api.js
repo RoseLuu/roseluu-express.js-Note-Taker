@@ -31,6 +31,7 @@ api.delete('/notes/:id', (req, res) => {
     readFromFile('./db/db.json')
         .then((data) => JSON.parse(data))
         .then((json) => {
+            //Result will print out new object with different id except the id of note that user choose
             const result = json.filter((note) => note.id !== id);
 
             writeToFile('./db/db.json', result);
@@ -39,14 +40,16 @@ api.delete('/notes/:id', (req, res) => {
 })
 //POST route to save the new notes
 api.post('/notes', (req, res) => {
-    //destructuring note 
     console.log("POST request");
+    //destructuring note 
     const { title, text } = req.body;
+    // console.log(title)
+    // console.log(text)
 
     if (title && text) {
         const newNote = {
-            'title': req.body.title,
-            'text': req.body.text,
+            title,
+            text,
             'id': uuidv4(),
         };
         readAndAppend(newNote, './db/db.json');

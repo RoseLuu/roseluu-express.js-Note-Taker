@@ -1,22 +1,17 @@
 [
     {
-        "title": "Hello",
-        "text": "This is the note taker",
-        "id": "b287103d-2bc0-4642-b73d-3da49e9c5990"
-    },
-    {
-        "title": "Cleaning",
-        "text": "Wash dish\nLaundry ",
-        "id": "a29e2b89-4beb-44b5-ae3e-9cfac461b3e4"
-    },
-    {
         "title": "Shopping list",
         "text": "Grape\nBeef",
         "id": "9f2dcdba-7f08-4e22-b0be-4484901b607f"
     },
     {
-        "title": "hi",
-        "text": " hjhjhj",
-        "id": "f6044406-efb0-4fe2-847f-9d492fb6d78c"
+        "title": "Cleaning",
+        "text": "Laundry \nWash dish",
+        "id": "f94d654a-dd15-41a1-8769-70303e68616c"
+    },
+    {
+        "title": "Movie",
+        "text": "Closer\nBattle Royale",
+        "id": "90655eb4-c088-499c-ae50-44576c16e662"
     }
 ]
