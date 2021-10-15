@@ -13,5 +13,10 @@
         "title": "Movie",
         "text": "Closer\nBattle Royale",
         "id": "90655eb4-c088-499c-ae50-44576c16e662"
+    },
+    {
+        "title": "study",
+        "text": "mySQL\nNODE.JS",
+        "id": "23d3b23e-331d-4292-acdd-3ad6cb243291"
     }
 ]
