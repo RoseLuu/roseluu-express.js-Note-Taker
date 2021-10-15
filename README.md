@@ -45,12 +45,27 @@
   * Express
 
   # Usage
+  Use deployed link to access the page and take as many notes as you want.
+  
+  <br />
+  Or follow this instruction to run on localhost: 
+  
+  <br />
+  <br />
+
   Clone this repo and run command
   ```
   npm i
   ```
   to install express and uuid
+  
+  <br />
 
+  Navigate in the file and run
+  ```
+  node server.js
+  ```
+  run http://localhost:3001/
   # License
   This project is licensed under the MIT license. 
 
